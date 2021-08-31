@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Kiếm tra " onclick="bai6()">
+<script>
+    function bai6() {
+        let number = prompt("Nhập vào một số")
+        let check = kiemtraKyTuNguyenDuong(number)
+        if(check == true){
+            alert(number+ " Đây là số nguyên dương")
+        }else{
+            alert(number+ " Không phải số nguyên dương")
+        }
+
+    }
+    function kiemtraKyTuNguyenDuong(number) {
+        if(/[>0]/.test(number) ){
+            return true
+        }
+        return false
+    }
+</script>
+</body>
+</html>

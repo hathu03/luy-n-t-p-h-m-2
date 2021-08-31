@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Đổi chiều mảng" onclick="bai8()">
+<script>
+    function bai8() {
+        let mangso = [4,1,6,8,2,7,0]
+        document.write("Mảng số gồm mang["+mangso+"]<br>")
+        let daoMang = daoMangSo(mangso)
+        document.write("Đổi chỗ mảng số mangdoi["+daoMang+"]")
+    }
+    function daoMangSo(mangso) {
+        return mangso.reverse()
+    }
+
+</script>
+</body>
+</html>
